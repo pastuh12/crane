@@ -58,7 +58,7 @@
         </div>
     </div>
 </header>
-<div class="d-flex flex-wrap justify-content-center bg-light py-3 mb-4 border-bottom fixed-top">
+{{-- <div class="d-flex flex-wrap justify-content-center bg-light py-3 mb-4 border-bottom fixed-top">
     <a href="/" class="d-flex align-items-center  mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32">
             <use xlink:href="#bootstrap"></use>
@@ -73,4 +73,4 @@
         <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
     </ul>
-</div>
+</div> --}}
