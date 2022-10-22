@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('content.index');
-});
+})->name('home');
+
+Route::get('/cranes', function() {
+    return view('content.cranes');
+})->name('cranes');
