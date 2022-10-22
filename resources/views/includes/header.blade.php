@@ -1,32 +1,68 @@
-<header class="d-flex flex-column">
-    <div class="d-flex flex-wrap justify-content-center  py-3  mb-5  border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Simple header</span>
-        </a>
+<header class="container-fluid bg-white border-bottom mb-4">
+    <div class="row py-2 py-md-3 border-bottom">
+        <div class="col col-md-4 d-flex flex-row align-items-center justify-content-center">
+                <a href="/" class="d-flex align-items-between mb mb-md-0 me-1 text-dark text-decoration-none">
+                    <img class="rounded logo" style="width:50px; height: 50px;" src="./storage/svg/bmw-logo.svg"
+                        alt="">
+                </a>
+            <span class="fs-4">Аренда кранов</span>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+            <div style="width: fit-content">
+                <span class="fs-5 list-group-item list-group-item-action border-0">Описание</span>
+            </div>
+        </div>
+        <div class="d-none d-md-flex col-md-2 flex-row">
+            <img src="" alt="">
+            <div style="width: fit-content">
+                <span class="fs-5 list-group-item list-group-item-action border-0">Адрес</span>
+            </div>
+        </div>
+    </div>
 
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Техника</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-        </ul>
+    <div class="d-flex flex-row bg-white justify-content-around border-bottom py-1">
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('home') }}">Главная</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('cranes') }}" class="">Техника</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('about') }}" class="">О нас</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0" href="#"
+                class="">Контакты</a></div>
     </div>
 </header>
-<div class="d-flex flex-wrap justify-content-center bg-white py-3 border-bottom fixed-top">
-    <a href="/" class="d-flex align-items-center  mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">Simple header</span>
-    </a>
 
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="{{route('home')}}" class="nav-link" aria-current="page">Главная</a></li>
-        <li class="nav-item"><a href="{{route('cranes')}}" class="nav-link">Техника</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-    </ul>
+
+<div class="container-fluid bg-white border-bottom fixed-top">
+    <div class="row py-2 py-md-3 border-bottom">
+        <div class="col col-md-4 d-flex flex-row align-items-center justify-content-center">
+                <a href="/" class="d-flex align-items-between mb mb-md-0 me-1 text-dark text-decoration-none">
+                    <img class="rounded logo" style="width:50px; height: 50px;" src="./storage/svg/bmw-logo.svg"
+                        alt="">
+                </a>
+            <span class="fs-4">Аренда кранов</span>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+            <div style="width: fit-content">
+                <span class="fs-5 list-group-item list-group-item-action border-0">Описание</span>
+            </div>
+        </div>
+        <div class="d-none d-md-flex col-md-2 flex-row">
+            <img src="" alt="">
+            <div style="width: fit-content">
+                <span class="fs-5 list-group-item list-group-item-action border-0">Адрес</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row bg-white justify-content-around border-bottom py-1">
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('home') }}">Главная</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('cranes') }}" class="">Техника</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0"
+                href="{{ route('about') }}" class="">О нас</a></div>
+        <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0" href="#"
+                class="">Контакты</a></div>
+    </div>
 </div>

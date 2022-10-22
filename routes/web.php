@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CraneController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('content.index');
 })->name('home');
+Route::get('/about', function() {
+    return view('content.about');
+})->name('about');
 
-Route::get('/cranes', function() {
-    return view('content.cranes');
-})->name('cranes');
+Route::get('/cranes', [CraneController::class, 'getAllCranes'])->name('cranes');
+

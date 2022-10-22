@@ -12,21 +12,18 @@
             </div>
             @foreach ($cranes as $crane)
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="./storage/crane/crane.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
+                        <h5 class="card-title">{{$crane->mark . " " . $crane->model}}</h5>
+                        <p class="card-text">{{$crane->decription}}</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">Тип крана: {{$crane->tipe}}</li>
+                        <li class="list-group-item">Грузовой момент: {{$crane->cargo_moment}}</li>
+                        <li class="list-group-item">Длина стрелы: {{$crane->min_boom_length . " - " . $crane->max_boom_length}}</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
+                        <a href="#" class="card-link">Card link</a>                    </div>
                 </div>
             @endforeach
         </div>
