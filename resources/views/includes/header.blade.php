@@ -2,7 +2,7 @@
     <div class="row py-2 py-md-3 border-bottom">
         <div class="col col-md-4 d-flex flex-row align-items-center justify-content-center">
                 <a href="/" class="d-flex align-items-between mb mb-md-0 me-1 text-dark text-decoration-none">
-                    <img class="rounded logo" style="width:50px; height: 50px;" src="./storage/svg/bmw-logo.svg"
+                    <img class="rounded logo" style="width:50px; height: 50px;" src="{{asset('./storage/svg/bmw-logo.svg')}}"
                         alt="">
                 </a>
             <span class="fs-4">Аренда кранов</span>
@@ -33,11 +33,11 @@
 </header>
 
 
-<div class="container-fluid bg-white border-bottom fixed-top">
+{{-- <div class="container-fluid bg-white border-bottom fixed-top">
     <div class="row py-2 py-md-3 border-bottom">
         <div class="col col-md-4 d-flex flex-row align-items-center justify-content-center">
                 <a href="/" class="d-flex align-items-between mb mb-md-0 me-1 text-dark text-decoration-none">
-                    <img class="rounded logo" style="width:50px; height: 50px;" src="./storage/svg/bmw-logo.svg"
+                    <img class="rounded logo" style="width:50px; height: 50px;" src="{{asset('./storage/svg/bmw-logo.svg')}}"
                         alt="">
                 </a>
             <span class="fs-4">Аренда кранов</span>
@@ -65,4 +65,4 @@
         <div><a class="text-dark text-decoration-none list-group-item list-group-item-action border-0" href="#"
                 class="">Контакты</a></div>
     </div>
-</div>
+</div> --}}

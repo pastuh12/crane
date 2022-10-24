@@ -11,8 +11,9 @@
     <title>
         WebApp
     </title>
-    <link href="./build/assets/bootstrap.min.f066aefa.css" rel="stylesheet">
-    <script src="./build/assets/bootstrap.bundle.min.77fb9fc3.js" defer></script>
+    <link href="{{asset('./build/assets/bootstrap.min.f066aefa.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('build/assets/style.4a0d84cc.css')}}">
+    <script src="{{asset('./build/assets/bootstrap.bundle.min.77fb9fc3.js')}}" defer></script>
 </head>
 
 <body class="bg-light">
