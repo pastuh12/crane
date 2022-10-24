@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('crane_id');
-            $table->string('path')->default('./storage/app/public/crane/crane.jpg');
+            $table->bigInteger('tech_id');
+            $table->string('path', 100)->default('./storage/crane/crane.jpg');
+            $table->boolean('is_main_image')->default(false);
             $table->timestamps();
         });
     }

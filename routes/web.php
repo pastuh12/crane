@@ -22,4 +22,5 @@ Route::get('/about', function() {
 })->name('about');
 
 Route::get('/cranes', [CraneController::class, 'getAllCranes'])->name('cranes');
+Route::get('/cranes/{id}', [CraneController::class, 'getCrane'])->name('getCrane');
 
