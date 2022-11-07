@@ -5,25 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Crane extends Model
+class Service extends Model
 {
     use HasFactory;
 
-    protected $table = 'cranes';
+    protected $table = 'servises';
     protected $primaryKey = 'id';
     protected $dateFormat = 'U';
     protected $connection = 'pgsql';
 
     protected $fillable = [
-        'model',
-        'mark',
-        'tipe',
-        'year_create',
-        'cargo_moment',
-        'max_boom_length',
-        'min_boom_length',
-        'max_load_capacity',
-        'end_load_capacity',
+        'title',
         'description',
     ];
 
@@ -32,4 +24,3 @@ class Crane extends Model
     ];
 
 }
-

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ImagesSeeder extends Seeder
+class ServicesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,9 @@ class ImagesSeeder extends Seeder
     public function run()
     {
         for ($i=0; $i < 5; $i++) {
-            DB::table('images')->insert([
-                'tech_id' => 5,
-                'path' => './storage/crane/crane.jpg',
-                'is_main_image' => false,
+            DB::table('services')->insert([
+                'title' => "GNMLRENF AFENOIEMifjmoiedmfmMDNSMFOSMNf SNSOIDFWE",
+                'description' => 'sdjvoisd sdofnoivn fwbi bfxcvoifj oijvuiohnfgiuwefb ishvouiwfiowf uish gfuiwf vsvjf',
             ]);
         }
     }

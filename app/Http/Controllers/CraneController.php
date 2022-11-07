@@ -23,7 +23,7 @@ class CraneController extends Controller
                 case 2:
                     $crane->tipe = "C оголовком";
                 default:
-                    $crane->tipe = "Тип крана";
+                    $crane->tipe = " - ";
                     break;
             }
         }
@@ -31,9 +31,8 @@ class CraneController extends Controller
     }
 
 
-    public function getCrane(Request $request, int $id) {
-        $crane = Crane::firstWhere('id', $id);
-        $images = Images::Where('tech_id', $id)->get();
+    public function getCrane(Request $request, Crane $crane) {
+        $images = Images::Where('tech_id', $crane->id)->get();
 
         return view('content.crane', ['crane' => $crane, 'images' => $images]);
     }

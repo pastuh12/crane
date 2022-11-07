@@ -13,17 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cranes', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('model', 100) ;
-            $table->string('mark', 100);
-            $table->integer('type');
-            $table->integer('year_create');
-            $table->double('cargo_moment');
-            $table->double('min_boom_length');
-            $table->double('max_boom_length');
-            $table->double('max_load_capacity');
-            $table->double('end_load_capacity');
+            $table->string('title', 100);
             $table->string('description', 1000);
             $table->timestamps();
         });
@@ -36,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cranes');
+        Schema::dropIfExists('services');
     }
 };

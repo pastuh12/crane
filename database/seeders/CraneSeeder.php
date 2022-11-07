@@ -20,6 +20,7 @@ class CraneSeeder extends Seeder
         DB::table('cranes')->insert([
             'model' => Str::random(10),
             'mark' => Str::random(10),
+            'year_create' => 2010,
             'description' => Str::random(50),
             'cargo_moment' => 12.5,
             'min_boom_length' => 10,
